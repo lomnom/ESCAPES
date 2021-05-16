@@ -41,3 +41,6 @@
       The escape is not yet built.
     - `rightEscape`: generates a escape that moves the cursor right `n` lines
       syntax: `rightEscape(n)`, where `n` is a int value or a string representation of a int value
+  - `Erase`: escapes related to erasing the screen
+    - `screen`: clears the screen
+    - `scrollbackScreen`: clears the screen by printing &lt;terminal height&gt;
