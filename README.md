@@ -1,6 +1,6 @@
 # ESCAPES, a python library with every ANSI escape code you will ever need!
 ## Attributes:
-- - `Escapes`:
+- `Escapes`:
   - `bell`: makes the terminal make the error sound 
   - `backspace`: deletes the character behind the cursor, unless there are no characters behind the cursor. Newline does not count as a character.  
   - `saveScreen`: saves all content on the current screen 
@@ -11,6 +11,6 @@
   - `esc`: starts an escape code
   - `delete`: delete key, not sure what it does but it does do _something_
   - `Tabs`: class that stores tabs
-  - - `vertical`: a wierd tab that probably has no use
+    - `vertical`: a wierd tab that probably has no use
     - `horizontal`: a normal tab
-    
+
