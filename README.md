@@ -51,4 +51,20 @@
       - `toStartOfScreen`: erases everything from cursor to start of screen
       - `toStartOfLine`: erases from the cursor to the start of the line
       - `toEndOfLine`: erases from the cursor to the end of the line
-    
+  - `Style`: escapes to change the style of text
+    - `reset`: resets all style
+    - `bold`: makes all the text printed after printing this bold
+    - `dim`: makes all the text printed after printing this dim
+    - `italic`: makes all the text printed after printing this italic
+    - `underline`: makes all the text printed after printing this underlined
+    - `blink`: makes all the text printed after printing this blink
+    - `invert`: makes all the text printed after printing this have it's color inverted from the current color
+    - `invisible`: makes all the text printed after printing this be invisible
+    - `strikethrough`: makes all the text printed after printing this be struck through
+
+---
+**Disclaimer**: Some escape codes do not work in certain terminals, such as strikethrough, which does not work in terminal.app  
+If you called one of these thinking they were functions, and got `TypeError: 'str' object is not callable`, you tried to call an escape code, which is meant to be printed.  
+
+---
+Also, a **HUGE** thank you to fnky, who made [this](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797) gist, which is where i took almost all of these escape codes from
