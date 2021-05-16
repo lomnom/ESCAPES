@@ -43,4 +43,12 @@
       syntax: `rightEscape(n)`, where `n` is a int value or a string representation of a int value
   - `Erase`: escapes related to erasing the screen
     - `screen`: clears the screen
-    - `scrollbackScreen`: clears the screen by printing &lt;terminal height&gt;
+    - `scrollbackScreen`: clears the screen by printing &lt;terminal height&gt; newlines. Does not work properly when cursor is not at home
+    - `scrollback`: clears scrollback
+    - `eraseLine`, `line`: they both clear the current line. If you figure out the difference between them, please help me update this file.
+    - `fromCursor`: escapes to clear from cursor
+      - `toEndOfScreen`: erases everything from cursor to end of screen
+      - `toStartOfScreen`: erases everything from cursor to start of screen
+      - `toStartOfLine`: erases from the cursor to the start of the line
+      - `toEndOfLine`: erases from the cursor to the end of the line
+    
