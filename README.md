@@ -13,4 +13,11 @@
   - `Tabs`: class that stores tabs
     - `vertical`: a wierd tab that probably has no use
     - `horizontal`: a normal tab
-
+  - `Cursor`: cursor related escape codes
+    - `makeInvisible`: hide the cursor
+    - `makeVisible`: show the cursor
+    - `home`: move the cursor to home (1,2)
+    - `moveTo`: the template of the escape to move the cursor, where row is "row" and column is "column".  
+      The escape is not yet built.
+    - `moveEscape`: generates a escape that moves the cursor to row,column.
+      syntax: `moveEscape(row,column)`, where row and column are int values or string representations of int values.
