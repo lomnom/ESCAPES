@@ -22,7 +22,7 @@
       The escape is not yet built.
     - `moveEscape`: generates a escape that moves the cursor to row,column.  
       syntax: `moveEscape(row,column)`, where `row` and `column` are int values or string representations of int values.  
-      **DISCLAIMER:** the coordinates start at 1, not 0, and row 1 is usually reserved, and you are unable to move there!
+      **DISCLAIMER:** the coordinates start at 1, not 0, and the row that contains the command prompt used to run the script is usually reserved, and you are unable to move there untill the command prompt is pushed up with newlines!
     - `save`: saves the current cursor position
     - `load`: loads the last saved cursor position
     - `up`: the template to move the cursor up `#` lines  
