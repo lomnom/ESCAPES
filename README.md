@@ -61,10 +61,14 @@
     - `invert`: makes all the text printed after printing this have it's color inverted from the current color
     - `invisible`: makes all the text printed after printing this be invisible
     - `strikethrough`: makes all the text printed after printing this be struck through
+  - `Color8`: 
 
 ---
-**Disclaimer**: Some escape codes do not work in certain terminals, such as strikethrough, which does not work in terminal.app  
-If you called one of these thinking they were functions, and got `TypeError: 'str' object is not callable`, you tried to call an escape code, which is meant to be printed.  
+
+**Disclaimers**: 
+  - Some escape codes do not work in certain terminals, such as strikethrough, which does not work in terminal.app  
+  - If you called one of these thinking they were functions, and got `TypeError: 'str' object is not callable`, you tried to *call* an escape code, which is meant to be *printed*.  
 
 ---
+
 Also, a **HUGE** thank you to fnky, who made [this](https://gist.github.com/fnky/458719343aabd01cfb17a3a4f7296797) gist, which is where i took almost all of these escape codes from
