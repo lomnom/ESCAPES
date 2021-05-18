@@ -17,7 +17,7 @@
   - `Cursor`: cursor related escape codes
     - `makeInvisible`: hide the cursor
     - `makeVisible`: show the cursor
-    - `home`: move the cursor to home (`(1,2)`)
+    - `home`: move the cursor to home (`(1,<insert first row>)`)
     - `moveEscape`: generates a escape that moves the cursor to row,column.  
       syntax: `moveEscape(row,column)`, where `row` and `column` are int values or string representations of int values.  
       **DISCLAIMER:** the coordinates start at 1, not 0, and the row that contains the command prompt used to run the script is usually reserved, and you are unable to move there untill the command prompt is pushed up with newlines!
@@ -80,10 +80,10 @@
   - `TrueColor` escapes for the full RGB range. some terminals dont support
     - `Foreground`: foreground escapes
       - `color`: function to make color escape code
-        Syntax: `color(r,g,b)`, where `r`,`g`,and`b` are the rgb values of your color
+        Syntax: `color(r,g,b)`, where `r`, `g`, and `b` are the rgb values of your color
     -`Background`:
       - `color`: function to make color escape code
-        Syntax: `color(r,g,b)`, where `r`,`g`,and`b` are the rgb values of your color
+        Syntax: `color(r,g,b)`, where `r`, `g`, and `b` are the rgb values of your color
 
 ---
 
