@@ -84,6 +84,9 @@
     -`Background`:
       - `color`: function to make color escape code
         Syntax: `color(r,g,b)`, where `r`, `g`, and `b` are the rgb values of your color
+- `newlinelessPrint`: function to print string without newline
+  Syntax: `newlinelessPrint(string)`, where `string` is the string to be printed
+  
 
 ---
 
