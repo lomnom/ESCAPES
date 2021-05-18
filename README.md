@@ -37,8 +37,7 @@
       The escape is not yet built.
     - `leftEscape`: generates a escape that moves the cursor left `n` lines
       syntax: `leftEscape(n)`, where `n` is a int value or a string representation of a int value
-    - `right`: the template to move the cursor right `#` lines  
-      The escape is not yet built.
+    - `right`: the template to move the cursor right `#` lines [1]  
     - `rightEscape`: generates a escape that moves the cursor right `n` lines
       syntax: `rightEscape(n)`, where `n` is a int value or a string representation of a int value
   - `Erase`: escapes related to erasing the screen
@@ -61,7 +60,9 @@
     - `invert`: makes all the text printed after printing this have it's color inverted from the current color
     - `invisible`: makes all the text printed after printing this be invisible
     - `strikethrough`: makes all the text printed after printing this be struck through
-  - `Color8`: 
+  - `Color8`: 8 basic ansi colors that are supported widely
+
+[1]: The escape is not yet built.
 
 ---
 
