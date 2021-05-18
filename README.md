@@ -18,26 +18,22 @@
     - `makeInvisible`: hide the cursor
     - `makeVisible`: show the cursor
     - `home`: move the cursor to home (`(1,2)`)
-    - `moveTo`: the template of the escape to move the cursor, where row is "row" and column is "column".  
-      The escape is not yet built.
+    - `moveTo`: the template of the escape to move the cursor, where row is "row" and column is "column". [^1]
     - `moveEscape`: generates a escape that moves the cursor to row,column.  
       syntax: `moveEscape(row,column)`, where `row` and `column` are int values or string representations of int values.  
       **DISCLAIMER:** the coordinates start at 1, not 0, and the row that contains the command prompt used to run the script is usually reserved, and you are unable to move there untill the command prompt is pushed up with newlines!
     - `save`: saves the current cursor position
     - `load`: loads the last saved cursor position
-    - `up`: the template to move the cursor up `#` lines  
-      The escape is not yet built.
+    - `up`: the template to move the cursor up `#` lines [^1]
     - `upEscape`: generates a escape that moves the cursor up `n` lines
       syntax: `upEscape(n)`, where `n` is a int value or a string representation of a int value
-    - `down`: the template to move the cursor down `#` lines  
-      The escape is not yet built.
+    - `down`: the template to move the cursor down `#` lines [^1]
     - `downEscape`: generates a escape that moves the cursor down `n` lines
       syntax: `downEscape(n)`, where `n` is a int value or a string representation of a int value
-    - `left`: the template to move the cursor left `#` lines  
-      The escape is not yet built.
+    - `left`: the template to move the cursor left `#` lines [^1]
     - `leftEscape`: generates a escape that moves the cursor left `n` lines
       syntax: `leftEscape(n)`, where `n` is a int value or a string representation of a int value
-    - `right`: the template to move the cursor right `#` lines [1]  
+    - `right`: the template to move the cursor right `#` lines [^1]  
     - `rightEscape`: generates a escape that moves the cursor right `n` lines
       syntax: `rightEscape(n)`, where `n` is a int value or a string representation of a int value
   - `Erase`: escapes related to erasing the screen
@@ -60,9 +56,7 @@
     - `invert`: makes all the text printed after printing this have it's color inverted from the current color
     - `invisible`: makes all the text printed after printing this be invisible
     - `strikethrough`: makes all the text printed after printing this be struck through
-  - `Color8`: 8 basic ansi colors that are supported widely
-
-[1]: The escape is not yet built.
+  - `Color8`: 8 basic ansi colors that are supported widel [^1]
 
 ---
 
