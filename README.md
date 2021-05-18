@@ -4,7 +4,7 @@
   - `bell`: makes the terminal make the error sound 
   - `backspace`: deletes the character behind the cursor, unless there are no characters behind the cursor. Newline does not count as a character.  
   - `saveScreen`: saves all content on the current screen  
-    **DISCLAIMER:** it will only save the line which contains the command used to start the script, and any output that the program makes **that is in view**!
+    > **DISCLAIMER:** it will only save the line which contains the command used to start the script, and any output that the program makes **that is in view**!
   - `loadScreen`: loads the previous save
   - `newline`: makes a new line and moves cursor to the start of the new line
   - `formfeed`: form feed, or new page
@@ -19,18 +19,18 @@
     - `makeVisible`: show the cursor
     - `home`: move the cursor to home (`(1,<insert first row>)`)
     - `moveEscape`: generates a escape that moves the cursor to row,column.  
-      syntax: `moveEscape(row,column)`, where `row` and `column` are int values or string representations of int values.  
-      **DISCLAIMER:** the coordinates start at 1, not 0, and the row that contains the command prompt used to run the script is usually reserved, and you are unable to move there untill the command prompt is pushed up with newlines!
+      > syntax: `moveEscape(row,column)`, where `row` and `column` are int values or string representations of int values.  
+      > **DISCLAIMER:** the coordinates start at 1, not 0, and the row that contains the command prompt used to run the script is usually reserved, and you are unable to move there untill the command prompt is pushed up with newlines!
     - `save`: saves the current cursor position
     - `load`: loads the last saved cursor position
     - `upEscape`: generates a escape that moves the cursor up `n` lines
-      syntax: `upEscape(n)`, where `n` is a int value or a string representation of a int value
+      > syntax: `upEscape(n)`, where `n` is a int value or a string representation of a int value
     - `downEscape`: generates a escape that moves the cursor down `n` lines
-      syntax: `downEscape(n)`, where `n` is a int value or a string representation of a int value
+      > syntax: `downEscape(n)`, where `n` is a int value or a string representation of a int value
     - `leftEscape`: generates a escape that moves the cursor left `n` lines
-      syntax: `leftEscape(n)`, where `n` is a int value or a string representation of a int value
+      > syntax: `leftEscape(n)`, where `n` is a int value or a string representation of a int value
     - `rightEscape`: generates a escape that moves the cursor right `n` lines
-      syntax: `rightEscape(n)`, where `n` is a int value or a string representation of a int value
+      > syntax: `rightEscape(n)`, where `n` is a int value or a string representation of a int value
   - `Erase`: escapes related to erasing the screen
     - `screen`: clears the screen
     - `scrollbackScreen`: clears the screen by printing &lt;terminal height&gt; newlines. Does not work properly when cursor is not at home
@@ -73,19 +73,19 @@
   - `Color256`: 256 basic ansi colors that are supported widely
     - `Foreground`: foreground escapes
       - `color`: function to make color escape code
-        Syntax: `color(n)`, where `n` is the ID of your color (IDs end at 256)
+        > Syntax: `color(n)`, where `n` is the ID of your color (IDs end at 256)
     -`Background`:
       - `color`: function to make color escape code
-        Syntax: `color(n)`, where `n` is the ID of your color (IDs end at 256)
+        > Syntax: `color(n)`, where `n` is the ID of your color (IDs end at 256)
   - `TrueColor` escapes for the full RGB range. some terminals dont support
     - `Foreground`: foreground escapes
       - `color`: function to make color escape code
-        Syntax: `color(r,g,b)`, where `r`, `g`, and `b` are the rgb values of your color
+        > Syntax: `color(r,g,b)`, where `r`, `g`, and `b` are the rgb values of your color
     -`Background`:
       - `color`: function to make color escape code
-        Syntax: `color(r,g,b)`, where `r`, `g`, and `b` are the rgb values of your color
+        > Syntax: `color(r,g,b)`, where `r`, `g`, and `b` are the rgb values of your color
 - `newlinelessPrint`: function to print string without newline
-  Syntax: `newlinelessPrint(string)`, where `string` is the string to be printed
+  > Syntax: `newlinelessPrint(string)`, where `string` is the string to be printed
   
 
 ---
