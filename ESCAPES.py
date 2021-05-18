@@ -90,7 +90,7 @@ class Escapes:
 
 	class Erase:
 		screen=buildEscape("esc","J") #clear the screen
-		entireScreen=buildEscape("esc","2J") #clear entire screen, might not work properly if cursor not at (0,0), as it uses newlines!
+		scrollbackScreen=buildEscape("esc","2J") #clear entire screen, might not work properly if cursor not at (0,0), as it uses newlines!
 		scrollback=buildEscape("esc","3J") #discovered this
 	
 		line=buildEscape("esc","K") #erase line cursor is on
