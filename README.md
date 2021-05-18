@@ -18,27 +18,17 @@
     - `makeInvisible`: hide the cursor
     - `makeVisible`: show the cursor
     - `home`: move the cursor to home (`(1,2)`)
-    - `moveTo`: the template of the escape to move the cursor, where row is "row" and column is "column".  
-      The escape is not yet built.
     - `moveEscape`: generates a escape that moves the cursor to row,column.  
       syntax: `moveEscape(row,column)`, where `row` and `column` are int values or string representations of int values.  
       **DISCLAIMER:** the coordinates start at 1, not 0, and the row that contains the command prompt used to run the script is usually reserved, and you are unable to move there untill the command prompt is pushed up with newlines!
     - `save`: saves the current cursor position
     - `load`: loads the last saved cursor position
-    - `up`: the template to move the cursor up `#` lines  
-      The escape is not yet built.
     - `upEscape`: generates a escape that moves the cursor up `n` lines
       syntax: `upEscape(n)`, where `n` is a int value or a string representation of a int value
-    - `down`: the template to move the cursor down `#` lines  
-      The escape is not yet built.
     - `downEscape`: generates a escape that moves the cursor down `n` lines
       syntax: `downEscape(n)`, where `n` is a int value or a string representation of a int value
-    - `left`: the template to move the cursor left `#` lines  
-      The escape is not yet built.
     - `leftEscape`: generates a escape that moves the cursor left `n` lines
       syntax: `leftEscape(n)`, where `n` is a int value or a string representation of a int value
-    - `right`: the template to move the cursor right `#` lines  
-      The escape is not yet built.
     - `rightEscape`: generates a escape that moves the cursor right `n` lines
       syntax: `rightEscape(n)`, where `n` is a int value or a string representation of a int value
   - `Erase`: escapes related to erasing the screen
@@ -80,6 +70,21 @@
       - `magenta`: makes the background of all text printed after printing this magenta
       - `cyan`: makes the background of all text printed after printing this cyan
       - `white`: makes the background of all text printed after printing this white
+  - `Color256`: 256 basic ansi colors that are supported widely
+    - `Foreground`: foreground escapes
+      - `color`: function to make color escape code
+        Syntax: `color(n)`, where `n` is the ID of your color (IDs end at 256)
+    -`Background`:
+      - `color`: function to make color escape code
+        Syntax: `color(n)`, where `n` is the ID of your color (IDs end at 256)
+  - `TrueColor` escapes for the full RGB range. some terminals dont support
+    - `Foreground`: foreground escapes
+      - `color`: function to make color escape code
+        Syntax: `color(r,g,b)`, where `r`,`g`,and`b` are the rgb values of your color
+    -`Background`:
+      - `color`: function to make color escape code
+        Syntax: `color(r,g,b)`, where `r`,`g`,and`b` are the rgb values of your color
+
 ---
 
 **Disclaimers**: 
