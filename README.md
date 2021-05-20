@@ -87,6 +87,30 @@
 - `newlinelessPrint`: function to print string without newline
   > Syntax: `newlinelessPrint(string)`, where `string` is the string to be printed
   
+## Installation:
+### Macos/linux:
+
+1. [Install FUNC](https://github.com/lomnom/FUNC/blob/main/README.md)
+2. Run this:
+```
+echo "import os;print(os.__file__.replace('os.py',''))" > aahifbsab.py
+PYPATH=$(python3 aahifbsab.py)
+rm aahifbsab.py
+curl https://raw.githubusercontent.com/lomnom/ESCAPES/main/ESCAPES.py > kashdfj.py
+mv kashdfj.py "$PYPATH"ESCAPES.py
+```
+
+## Uninstallation:
+### Macos/Linux
+
+1. [uninstall FUNC](https://github.com/lomnom/FUNC/blob/main/README.md)
+2. Run this:
+```
+echo "import os;print(os.__file__.replace('os.py',''))" > aahifbsab.py
+PYPATH=$(python3 aahifbsab.py)
+rm aahifbsab.py
+rm "$PYPATH"ESCAPES.py
+```
 
 ---
 
