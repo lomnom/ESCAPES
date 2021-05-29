@@ -139,11 +139,11 @@ class Escapes:
 		class Foreground:
 			template="38;5;$#m" # # is the color id
 			def color(n):
-				return buildEscape("esc","38;5;$#m".replace("#",str(n)))
+				return buildEscape("esc","38;5;#m".replace("#",str(n)))
 		class Background:
 			template="48;5;$#m" # # is the color id
 			def color(n):
-				return buildEscape("esc","48;5;$#m".replace("#",str(n)))
+				return buildEscape("esc","48;5;#m".replace("#",str(n)))
 	class TrueColor:
 		class Foreground:
 			template="38;2;r;g;bm"
