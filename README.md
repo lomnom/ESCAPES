@@ -94,8 +94,7 @@
 2. Run this:
 ```
 PYPATH=$(python3 -c "import os;print(os.__file__.replace('os.py',''))")
-curl https://raw.githubusercontent.com/lomnom/ESCAPES/main/ESCAPES.py > kashdfj.py
-mv kashdfj.py "$PYPATH"ESCAPES.py
+curl https://raw.githubusercontent.com/lomnom/ESCAPES/main/ESCAPES.py > "$PYPATH"ESCAPES.py
 ```
 
 ## Uninstallation:
