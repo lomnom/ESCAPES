@@ -93,9 +93,7 @@
 1. [Install FUNC](https://github.com/lomnom/FUNC/blob/main/README.md)
 2. Run this:
 ```
-echo "import os;print(os.__file__.replace('os.py',''))" > aahifbsab.py
-PYPATH=$(python3 aahifbsab.py)
-rm aahifbsab.py
+PYPATH=$(python3 -c "import os;print(os.__file__.replace('os.py',''))")
 curl https://raw.githubusercontent.com/lomnom/ESCAPES/main/ESCAPES.py > kashdfj.py
 mv kashdfj.py "$PYPATH"ESCAPES.py
 ```
@@ -106,9 +104,7 @@ mv kashdfj.py "$PYPATH"ESCAPES.py
 1. [uninstall FUNC](https://github.com/lomnom/FUNC/blob/main/README.md)
 2. Run this:
 ```
-echo "import os;print(os.__file__.replace('os.py',''))" > aahifbsab.py
-PYPATH=$(python3 aahifbsab.py)
-rm aahifbsab.py
+PYPATH=$(python3 -c "import os;print(os.__file__.replace('os.py',''))")
 rm "$PYPATH"ESCAPES.py
 ```
 
